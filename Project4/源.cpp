@@ -556,6 +556,7 @@ int main()
 	int x = 0;
 	int l = 0;
 	int p = 0;
+	int x = 0;
 
 
 
