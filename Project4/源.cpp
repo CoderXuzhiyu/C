@@ -553,6 +553,7 @@ int main()
 	int b = 0;
 	int c = 0;
 	int d = 0;
+	int d = 0;
 	int x = 0;
 	int l = 0;
 	return 0;
