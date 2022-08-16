@@ -566,5 +566,6 @@ int main()
 
 	int j = 0;
 	int u = 0;
+	int t = 0;
 	return 0;
 }
