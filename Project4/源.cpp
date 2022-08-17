@@ -569,7 +569,9 @@
 //	int t = 0;
 //	return 0;
 //}
-//int get_max(int x, int y)
+//
+// 
+// {int get_max(int x, int y)
 //{
 //	int z = 0;
 //	if (x > y)
@@ -586,11 +588,11 @@
 //	int max = get_max(a, b);
 //	printf("max=%d\n", max);
 //	return 0;
-//}
+//}}
 
 //函数返回类型的地方写成：void，表示这个函数不返回任何值，也不需要返回。
 
-//void Swap(int* pa, int* pb)
+//{void Swap(int* pa, int* pb)
 //{
 //	int z = 0;
 //	z = *pa;
@@ -605,30 +607,100 @@
 //	Swap(&a, &b);
 //	printf("交换后: a=%d,b=%d\n", a,b);
 //	return 0;
+//}}
+//
+// 
+// 
+// {int prime(int n)
+//{
+//	int j = 0;
+//	for (j = 2; j <=sqrt(n); j++)
+//	{
+//		if (n % j == 0)
+//			return 1;
+//	}
+//	return 0;
 //}
-int prime(int n)
-{
-	int j = 0;
-	for (j = 2; j <=sqrt(n); j++)
-	{
-		if (n % j == 0)
-			return 1;
-	}
-	return 0;
-}
-int main()
-{
-	int count=0;
-	int i;
-	for (i = 100; i <= 200; i++)
-	{
-		if (prime(i) == 0)
-		{
-			printf("%d ", i);
-			count++;
-		}
+//int main()
+//{
+//	int count=0;
+//	int i;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		if (prime(i) == 0)
+//		{
+//			printf("%d ", i);
+//			count++;
+//		}
+//	}
+//	printf("\ncount=%d\n", count);
+//	return 0;
+//}}
+//
+// 
+// 
+// {int run(int x)
+//{
+//	if ((x % 4 == 0 && x%100!=0) || x % 400 == 0)
+//	{
+//		return 0;
+//	}
+//	else
+//
+//	return 1;
+//}
+//int main()
+//{
+//	int s;
+//	scanf_s("%d", &s);
+//	if (run(s) == 0)
+//	{
+//		printf("%d是闰年\n", s);
+//	}
+//	else
+//		printf("%d不是闰年\n", s);
+//	return 0;
+//}}
 
-	}
-	printf("\ncount=%d\n", count);
-	return 0;
-}
+
+
+//int binary_search(int a[], int k, int s)
+//{
+//	int left = 0;
+//	int right = s - 1;
+//	while (left <= right)
+//	{
+//		int mid = (left + right)/2;
+//		if (a[mid] > k)
+//		{
+//			right = mid - 1;
+//		}
+//		else if (a[mid] < k)
+//		{
+//			left = mid + 1;
+//		}
+//		else
+//		{
+//			return mid;
+//		}
+//	}
+//	return -1;
+//}
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int key = 7;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int ret = binary_search(arr, key, sz);
+//	if (-1 == ret)
+//	{
+//		printf("找不到了\n");
+//	}
+//	else
+//	{
+//		printf("找到了，下标是：%d\n", ret);
+//	}
+//
+//	
+// return 0;
+//}
