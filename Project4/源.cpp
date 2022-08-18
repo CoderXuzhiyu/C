@@ -704,8 +704,66 @@
 // 
 // return 0;
 //}
-int main()
+//void print(unsigned int n)
+//{
+//	if (n > 9)
+//		print(n / 10);
+//	printf("%d ", n % 10);
+//}
+//int main()
+//{
+//	unsigned int num = 0;
+//	scanf_s("%d", &num);
+//	print(num);
+//	return 0;
+//}
+//int my_strlen(char* str)
+//{
+//	int count = 0;
+//	while (*str != '\0')
+//	{
+//		count++;
+//		str++;
+//	}
+//	return count;
+//}
+//int my_strlen(char* str)
+//{
+//	if (*str != '\0')
+//	{
+//		return 1 + my_strlen(str + 1);
+//	}
+//	else
+//		return 0;
+//}
+//int main()
+//{   
+//	char arr[] = "bite";
+//	printf("%d\n", my_strlen(arr));
+//	return 0;
+//}
+int Fib(int n)
 {
-	
-	return 0;
-}
+	/*if (n <= 2)
+		return 1;
+	else 
+		return Fib(n - 1) + Fib(n - 2);*/
+//	int c = 1;
+//	int a = 1;
+//	int b = 1;
+//	while (n > 2)
+//	{
+//		c = a + b;
+//		a = b;
+//		b = c;
+//		n--;
+//	}
+//	return c;
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf_s("%d", &n);
+//	int ret = Fib(n);
+//	printf("%d\n", ret);
+//	return 0;
