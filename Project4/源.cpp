@@ -742,8 +742,8 @@
 //	printf("%d\n", my_strlen(arr));
 //	return 0;
 //}
-int Fib(int n)
-{
+//int Fib(int n)
+//{
 	/*if (n <= 2)
 		return 1;
 	else 
@@ -767,3 +767,58 @@ int Fib(int n)
 //	int ret = Fib(n);
 //	printf("%d\n", ret);
 //	return 0;
+//int main()
+//{
+//	//int arr[8];
+//	//char ch[5];
+//	/*char ch5[] = "bit";
+//	char ch6[] = { 'b','i','t' };
+//	printf("%s\n",ch5);
+//	printf("%s\n", ch6);*/
+//	int arr[10] = { 1 };
+//	arr[4] = 5;
+//	//printf("%d\n", arr[4]);
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//
+//}
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	///*printf("%x\n", 0x12);
+//	//printf("%p\n", 0x12);*/
+//	//for (int i = 0; i < 10; i++)
+//	//{
+//	//	printf("&arr[%d]=%p\n", i, &arr[i]);
+//	//}
+//	int* p = arr;
+//	for (int i = 0; i <= 9; i++)
+//	{
+//		printf("%d ", *p);
+//		p++;
+//	}
+//	return 0;
+//}
+int main()
+{
+	//int arr[3][4] = { 1,2,3,4,5,6,7,8,9,10,11,12 };
+	//int arr[3][4] = { 1,2,3,4,5,6,7 };
+	//int arr[3][4] = { {1,2},{3,4},{5,6} };
+	int arr[][4] = { {1,2},{3,4},{5,6} };
+	int i;
+	int j;
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 4; j++)
+		{
+		/*	printf("%d ", arr[i][j]);*/
+			printf("&arr[%d][%d]=%p\n", i, j, &arr[i][j]);
+		}
+		/*printf("\n");*/
+	}
+	return 0;
+}
