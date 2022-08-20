@@ -803,22 +803,133 @@
 //	}
 //	return 0;
 //}
+//int main()
+//{
+//	//int arr[3][4] = { 1,2,3,4,5,6,7,8,9,10,11,12 };
+//	//int arr[3][4] = { 1,2,3,4,5,6,7 };
+//	//int arr[3][4] = { {1,2},{3,4},{5,6} };
+//	int arr[][4] = { {1,2},{3,4},{5,6} };
+//	int i;
+//	int j;
+//	for (i = 0; i < 3; i++)
+//	{
+//		for (j = 0; j < 4; j++)
+//		{
+//		/*	printf("%d ", arr[i][j]);*/
+//			printf("&arr[%d][%d]=%p\n", i, j, &arr[i][j]);
+//		}
+//		/*printf("\n");*/
+//	}
+//	return 0;
+//}
+//void bubble_sort(int arr[], int sz)
+//{
+//	int i;
+//	for (i = 0; i < sz - 1; i++)
+//	{   
+//		for (int j = 0; j < sz - 1 - i; j++)
+//		{
+//			if (arr[j] > arr[j + 1])
+//			{
+//				int tmp = arr[j+1];
+//				arr[j + 1] = arr[j];
+//				arr[j] = tmp;
+//			}
+//		}
+//	}
+//}
+//int main()
+//{
+//	int arr[] = { 10,9,8,7,6,5,4,3,2,1 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	bubble_sort(arr, sz);
+//	return 0;
+//}
+//int main()
+//{
+//	return 0;
+//}
+
+
+
+// int prime(int x)
+//{
+//	for (int i = 2; i <= x / 2; i++)
+//	{
+//		if (x % i == 0)
+//		{
+//			return 1;
+//		}
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	for (int i = 100; i <= 200; i++)
+//	{
+//		if(prime(i)==0)
+//			printf("%d\n",i);
+//	}
+//	return 0;
+//}
+
+
+
+// void runnian(int x)
+//{
+//	if ((x % 4 == 0 && x % 100 != 0) || x % 400 == 0)
+//		printf("%d是闰年\n", x);
+//	else
+//		printf("%d不是闰年\n", x);
+//}
+//int main()
+//{
+//	int n;
+//	scanf_s("%d", &n);
+//	runnian(n);
+//	return 0;
+//}
+
+
+
+// void change(int* x, int* y)
+//{
+//	int tmp;
+//	tmp = *x;
+//	*x = *y;
+//	*y = tmp;
+//
+//}
+//int main()
+//{
+//	int x, y;
+//	scanf_s("%d %d", &x, &y);
+//	printf("%d %d\n", x, y);
+//	change(&x, &y);
+//	printf("%d %d\n", x, y);
+//	return 0;
+//}
+
+
+
+void  multiplication_table(int x)
+{
+	int i = 0;
+	int j = 0;
+	for (i = 1; i <= x; i++)
+	{
+		for (j = 1; j<= i; j++)
+		{
+			printf("%-2d*%-2d=%-2d ", i, j, i * j);
+		}
+		printf("\n");
+	}
+}
 int main()
 {
-	//int arr[3][4] = { 1,2,3,4,5,6,7,8,9,10,11,12 };
-	//int arr[3][4] = { 1,2,3,4,5,6,7 };
-	//int arr[3][4] = { {1,2},{3,4},{5,6} };
-	int arr[][4] = { {1,2},{3,4},{5,6} };
-	int i;
-	int j;
-	for (i = 0; i < 3; i++)
-	{
-		for (j = 0; j < 4; j++)
-		{
-		/*	printf("%d ", arr[i][j]);*/
-			printf("&arr[%d][%d]=%p\n", i, j, &arr[i][j]);
-		}
-		/*printf("\n");*/
-	}
+	int x = 0;
+	int y = 0;
+	scanf_s("%d", &x);
+	multiplication_table(x);
 	return 0;
 }
