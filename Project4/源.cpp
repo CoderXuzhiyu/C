@@ -700,8 +700,7 @@
 //	{
 //		printf("找到了，下标是：%d\n", ret);
 //	}
-//
-// 
+
 // return 0;
 //}
 //void print(unsigned int n)
@@ -784,9 +783,10 @@
 //		printf("%d ", arr[i]);
 //	}
 //	return 0;
-//
-//}
-//int main()
+
+
+
+// int main()
 //{
 //	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
 //	///*printf("%x\n", 0x12);
@@ -821,7 +821,9 @@
 //		/*printf("\n");*/
 //	}
 //	return 0;
-//}
+
+
+
 //void bubble_sort(int arr[], int sz)
 //{
 //	int i;
@@ -912,24 +914,203 @@
 
 
 
-void  multiplication_table(int x)
+//void  multiplication_table(int x)
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (i = 1; i <= x; i++)
+//	{
+//		for (j = 1; j<= i; j++)
+//		{
+//			printf("%-2d*%-2d=%-2d ", i, j, i * j);
+//		}
+//		printf("\n");
+//	}
+//}
+//int main()
+//{
+//	int x = 0;
+//	int y = 0;
+//	scanf_s("%d", &x);
+//	multiplication_table(x);
+//	return 0;
+//}
+
+
+
+//void print(int x)
+//{
+//	if (x > 9)
+//	{
+//		printf("%d ", x % 10);
+//		print(x / 10);
+//	}
+//	else
+//		printf("%d ", x);
+//}
+//int main()
+//{
+//	int n;
+//	scanf_s("%d", &n);
+//	print(n);
+//	return 0;
+//}
+
+
+
+//int main()
+//{
+//	int n;
+//	scanf_s("%d", &n);
+//	int ret=1;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		ret *= i;
+//	}
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+
+//int ret(int n)
+//{   
+//	if (n > 1)
+//	{   
+//		return n* ret(n - 1);
+//	}
+//	return n;
+//}
+//int main()
+//{
+//	int n;
+//    scanf_s("%d", &n);
+//	printf("%d\n",ret(n));
+//	return 0;
+//}
+
+
+
+//int strlen1(char* p)
+//{
+//	int count = 0;
+//	while (*p != '\0')
+//	{
+//		count++;
+//			p++;
+//	}
+//	return count;
+//}
+//int main()
+//{
+//	char arr[] = "bite";
+//	printf("%d\n", strlen1(arr));
+//	return 0;
+//}
+
+
+//
+//int strlen1(char* p)
+//{
+//	if (*p != '\0')
+//	{
+//		return 1 + strlen1(p + 1);
+//	}
+//	else
+//		return 0;
+//}
+//int main()
+//{
+//	char arr[] = "bite";
+//	printf("%d\n", strlen1(arr));
+//	return 0;
+//}
+
+
+
+//void reverse_string(char* string,int sz)
+//{
+//	int i = 0;
+//	for (i = 0; i < (sz-1) / 2; i++)
+//	{
+//		char tmp;
+//		tmp = *(string+i);
+//		*(string + i) = *(string + sz - 2 - i);
+//		*(string + sz - 2 - i) = tmp;
+//
+//
+//	}
+//}
+//int main()
+//{   
+//	char arr[] = "abcdef";
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	reverse_string(arr, sz);
+//	printf("%s\n", arr);
+//	return 0;
+//}
+
+
+
+//void reverse_string(char* string,char* p)
+//{ 
+//	if (string < p)
+//	{   
+//		char tmp;
+//		tmp = *string;
+//		*string = *p;
+//		*p = tmp;
+//		reverse_string((string + 1), (p - 1));
+//	}
+//}
+//int main()
+//{
+//	char arr[] = "abcdef";
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	char* p = &arr[sz - 2];
+//	reverse_string(arr,p);
+//	printf("%s\n", arr);
+//}
+
+
+
+//int digitsum(int n)
+//{
+//	if (n > 9)
+//	{   
+//		return n%10 + digitsum(n / 10);
+//	}
+//	else
+//	{
+//		return n;
+//	}
+//
+//}
+//int main()
+//{
+//	int n;
+//	scanf_s("%d", &n);
+//	printf("%d\n", digitsum(n));
+//	return 0;
+//}
+int pow1(int n, int k)
 {
-	int i = 0;
-	int j = 0;
-	for (i = 1; i <= x; i++)
+	int ret = 1;
+	while (k > 1)
 	{
-		for (j = 1; j<= i; j++)
-		{
-			printf("%-2d*%-2d=%-2d ", i, j, i * j);
-		}
-		printf("\n");
+		ret *= n;
+		k--;
+	}
+	if (k == 1)
+	{
+		ret *= n;
+		return ret;
 	}
 }
 int main()
 {
-	int x = 0;
-	int y = 0;
-	scanf_s("%d", &x);
-	multiplication_table(x);
+	int n, k;
+	scanf_s("%d%d", &n, &k);
+	printf("%d\n", pow1(n, k));
 	return 0;
 }
