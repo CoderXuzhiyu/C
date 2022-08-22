@@ -1093,24 +1093,109 @@
 //	printf("%d\n", digitsum(n));
 //	return 0;
 //}
-int pow1(int n, int k)
+
+
+
+// //int pow1(int n, int k)
+//{
+//	int ret = 1;
+//	while (k > 1)
+//	{
+//		ret *= n;
+//		k--;
+//	}
+//	if (k == 1)
+//	{
+//		ret *= n;
+//		return ret;
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int n, k;
+//	scanf_s("%d%d", &n, &k);
+//	printf("%d\n", pow1(n, k));
+//	return 0;
+//}
+
+
+//void init(int* p)
+//{
+//	for (int i = 0; i <= 9; i++)
+//	{
+//		*(p + i) = 0;
+//	}
+//}
+//void print(int* p)
+//{
+//	for (int i = 0; i <= 9; i++)
+//	{
+//		printf("%d\n", *(p+i));
+//	}
+//}
+//int main()
+//{
+//	int arr[10] = {1};
+//	init(arr);
+//	print(arr);
+//}
+
+
+
+//void change(int* x, int* y)
+//{
+//	for (int i = 0; i <= 2; i++)
+//	{
+//		int tmp;
+//		tmp = *(x+i);
+//		*(x + i) = *(y + i);
+//		*(y + i) = tmp;
+//	} 
+//}
+//int main()
+//{
+//	int arr[3] = { 1,2,3 };
+//	int arr1[3] = { 4,5,6 };
+//	change(arr, arr1);
+//	for (int i = 0; i <= 2; i++) 
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	printf("\n");
+//	for (int i = 0; i <= 2; i++)
+//	{
+//		printf("%d ", arr1[i]);
+//	}
+//	return 0;
+//}
+void menu()
 {
-	int ret = 1;
-	while (k > 1)
-	{
-		ret *= n;
-		k--;
-	}
-	if (k == 1)
-	{
-		ret *= n;
-		return ret;
-	}
+	printf("**********************\n*");
+	printf("*****  1.play  ********\n");
+	printf("*****  0.exit  ********\n");
+	printf("***********************\n");
 }
 int main()
 {
-	int n, k;
-	scanf_s("%d%d", &n, &k);
-	printf("%d\n", pow1(n, k));
+	int input = 0;
+	do
+	{
+		menu();
+		printf("请选择：");
+		scanf_s("%d", &input);
+		switch (input)
+		{
+		case 1:
+			game();
+			break;
+		case 0:
+			printf("游戏结束\n");
+			break;
+		default:
+			printf("选择错误，请重新选择\n");
+			break;
+		}
+	} while (input);
 	return 0;
 }
