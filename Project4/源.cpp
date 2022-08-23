@@ -1198,4 +1198,7 @@ void menu()
 //		}
 //	} while (input);
 //	return 0;
-//}
+int main()
+{
+	return 0;
+}
