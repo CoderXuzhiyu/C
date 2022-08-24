@@ -1198,7 +1198,12 @@ void menu()
 //		}
 //	} while (input);
 //	return 0;
+void function(int x)
+{
+
+}
 int main()
 {
+	
 	return 0;
 }
