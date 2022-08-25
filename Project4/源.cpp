@@ -1202,6 +1202,10 @@ void function(int x)
 {
 
 }
+void function2(char arr[])
+{
+
+}
 int main()
 {
 	
