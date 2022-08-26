@@ -1198,16 +1198,26 @@ void menu()
 //		}
 //	} while (input);
 //	return 0;
-void function(int x)
-{
-
-}
-void function2(char arr[])
-{
-
-}
+//void function(int x)
+//{
+//
+//}
+//void function2(char arr[])
+//{
+//
+//}
+//int main()
+//{
+//	
+//	return 0;
+//}
 int main()
 {
-	
+	int a = 6 / 5;
+	 a = 6.0 / 5.0;
+	printf("%f\n", a);
 	return 0;
+	a = a >> 3;
+	a >>= 3;
+	printf("%d\n", a);
 }
