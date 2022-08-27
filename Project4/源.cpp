@@ -1198,26 +1198,222 @@ void menu()
 //		}
 //	} while (input);
 //	return 0;
-//void function(int x)
+
+
+//int main()
 //{
+//	/*int a = 6 / 5;
+//	 a = 6.0 / 5.0;
+//	printf("%d\n", a);
+//	a = a >> 3;
+//	a >>= 3;
+//	printf("%d\n", a);
+//	a = a & ~(1 << 4);*/
+//	int b = (int)3.14;
+//	printf("%d\n", b);
 //
+//	return 0;
 //}
-//void function2(char arr[])
+//int main()
 //{
+//	int a = 3;
+//	int b = 1;
+//	if (a && b)
+//	{
+//		printf("hehe\n");
+//	}
+//	b = (a > 5 ? 1 : 2);
+//	int c = 0;
+//	int d = (c = 5, a = c + 3, b = a - 4, c += 5);
+//	if (a = b + 1, c = a / 2, d > 0)
+//	{
+//		
+//	}
+//	return 0;
+//}
+//struct book
+//{
+//	char name[20];
+//	char id[20];
+//	int price;
+//};
+//int main()
+//{
+//	struct book b = { "C语言", "20220827", 55 };
+//	printf("%s\n", b.name);
+//	printf("%s\n", b.id);
+//	printf("%d\n", b.price);
+//	return 0;
+
+
+
+//计算两个二进制整形数不同位的个数
+// int main()
+//{
+//	int m, n;
+//	scanf_s("%d %d", &m, &n);
+//	int a = m ^ n;
+//	int count = 0;
+//	for (int i = 0; i <= 31; i++)
+//	{
+//		if (((a>>i)&1) == 1)
+//		{
+//			count++;
+//		}
+//	}
+//	printf("%d\n", count);
+//	return 0;
+//}
+
+
+
+//分别打印一个数的偶数和奇数位的二进制序列
+//int main()
+//{
+//	int m;
+//	scanf_s("%d", &m);
+//	for (int i = 30; i >=0; i -= 2)
+//	{
+//		if ((m >> i & 1) == 1)
+//		{
+//			printf("%d", 1);
+//		}
+//		else
+//			printf("%d", 0);
+//	}
+//	printf("\n");
+//	for (int i = 31; i >0; i -= 2)
+//	{
+//		if ((m >> i & 1) == 1)
+//		{
+//			printf("%d", 1);
+//		}
+//		else
+//			printf("%d", 0);
+//	}
+//	
+//	return 0;
+
+
+
+//计算一个二进制序列中1的个数。
+//int main()
+//{
+//	int n;
+//	scanf_s("%d", &n);
+//	int count = 0;
+//	for (int i = 0; i <= 31; i++)
+//	{
+//		if (((n >> i) & 1) == 1)
+//		{
+//			count++;
+//		}
+//	}
+//	printf("%d\n", count);
+//	return 0;
+
+
+
+//交换两个整数的内容
+//int main()
+//{
+//	int a = 3;
+//	int b = 5;
+//	printf("a=%d b=%d\n", a, b);
+//	a = a + b;
+//	b = a - b;
+//	a = a - b;
+//	printf("a=%d b=%d", a, b);
+//	return 0;
+//}
+
+
+
+//计算Sn=a+aa+aaa+aaaa+aaaaa
+//int main()
+//{   
+//	int a;
+//	int b;
+//	int Sn = 0;
+//	scanf_s("%d", &a);
+//	b = a;
+//	for (int i=0;i<=4;i++)
+//	{ 
+//		a = a * 10 + b;
+//		Sn += a;
+//	}
+//	printf("%d\n", Sn);
+//	return 0;
+//}
+
+
+
+//打印0到100000的水仙花数
+//int count(int x)
+//{
+//	int count = 1;
+//	while (x > 9)
+//	{
+//		count++;
+//		x = x / 10;
+//	}
+//	return count;
+//}
+//int ret(int x,int y)
+//{
+//	int sum = 0;
+//	while (x > 0)
+//	{
+//	sum += (pow((x % 10),y));
+//		x=x/10;
+//	}
+//	return sum;
+//}
+//int main()
+//{   
+//
+//	for (int i = 0; i <= 100000; i++)
+//	{
+//		int n = count(i);
+//		int m = ret(i,n);
+//		if (i == m)
+//		{
+//			printf("%d\n", i);
+//		}
+//	}
+//	return 0;
+//}
+
+
+
+//使用指针打印一个整形数组的内容，不使用下标。
+//void print(int* p, int sz)
+//{
+//	for (int i = 0; i <= sz - 1; i++)
+//	{
+//		printf("%d ", *(p + i));
+//    }
 //
 //}
 //int main()
 //{
-//	
-//	return 0;
+//	int arr[3][4] = { {1,2,3,4},{5,6,7,8},{9,10,11,12} };
+//	int sz = sizeof(arr) / sizeof(arr[0][0]);
+//	print(&arr[0][0], sz);
 //}
+
+
+
 int main()
 {
-	int a = 6 / 5;
-	 a = 6.0 / 5.0;
-	printf("%f\n", a);
+	int a = 0;
+	int* p =&a;
+	printf("%d\n", *p);
+	/*int* arr[3];*/
+	int** pa = &p;
+	int*** pb = &pa;
+	int**** pc = &pb;
+	****pc = 1;
+	printf("%d ", *p);
 	return 0;
-	a = a >> 3;
-	a >>= 3;
-	printf("%d\n", a);
 }
