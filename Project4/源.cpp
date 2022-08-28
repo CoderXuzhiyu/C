@@ -1404,16 +1404,78 @@ void menu()
 
 
 
+//int main()
+//{
+//	int a = 0;
+//	int* p =&a;
+//	printf("%d\n", *p);
+//	int** pa = &p;
+//	int*** pb = &pa;
+//	int**** pc = &pb;
+//	****pc = 1;
+//	printf("%d ", *p);
+//	return 0;
+//}
+//void test2()
+//{
+//
+//}
+//void test1()
+//{
+//	test2();
+//}
+//void test()
+//{
+//	test1();
+//}
+//int main()
+//{
+//	test();
+//	return 0;
+//}
+//int main()
+//{
+//	for (int i = 0; i <= 1000; i++)
+//	{
+//		printf("1\n");
+//   }
+//}
+#include<assert.h>
+//void my_strcpy(char* dest,const char* src)
+//{
+//	assert(src != NULL);
+//	while(*dest++=*src++)
+//	{
+//		;
+//	}
+//}
+//int main()
+//{
+//	char arr1[20] = "xxxxxxxxxxxxxx";
+//	char arr2[] = "hello";
+//	my_strcpy(arr1, arr2);
+//	printf("%s\n", arr1);
+//	return 0;
+//}
+
+
+
+//ºÈÆûË®ÎÊÌâ
+int sum(int n)
+{
+	int m = 0;
+	if (n >=2)
+	{
+		m = n / 2;
+		return n + sum(m);
+	}
+	else if (n)
+		return n;
+}
 int main()
 {
-	int a = 0;
-	int* p =&a;
-	printf("%d\n", *p);
-	/*int* arr[3];*/
-	int** pa = &p;
-	int*** pb = &pa;
-	int**** pc = &pb;
-	****pc = 1;
-	printf("%d ", *p);
+	int n = 20;
+	sum(n);
+	printf("%d\n", sum(n));
 	return 0;
 }
