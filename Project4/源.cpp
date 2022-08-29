@@ -1461,21 +1461,157 @@ void menu()
 
 
 //喝汽水问题
-int sum(int n)
+//int sum(int n)
+//{
+//	if (n % 2 == 0)
+//	{
+//		int hat = n / 2;
+//		return n/2 + sum(hat);
+//	}
+//	else if (n % 2 != 0 && n > 2)
+//	{
+//		int hat = n / 2 + 1;
+//		return n/2 + sum(hat);
+//	}
+//	else
+//		return 0;
+//
+//}
+//int main()
+//{
+//	int n = 22;
+//	sum(n);
+//	printf("%d\n", n+sum(n));
+//	return 0;
+//}
+
+
+
+//打印菱形
+//int main()
+//{
+//	for (int i = 1; i <= 7; i++)
+//	{
+//		for (int y = -6; y <= 7 - i; y++)
+//		{
+//			printf(" ");
+//		}
+//		for (int j = 1; j <= i * 2 - 1; j++)
+//		{
+//		
+//			printf("*");
+//		}
+//		printf("\n");
+//		
+//	}
+//	for (int i = 1; i <= 6; i++)
+//	{
+//		for (int y = -6; y <= i; y++)
+//		{
+//			printf(" ");
+//		}
+//		for (int j = 1; j <= 13 - i*2; j++)
+//		{
+//		
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+
+
+//使字符串逆序的函数
+//void change(char* p,int sz)
+//{
+//	for (int i = 0; i <= sz - 2; i++)
+//	{
+//		if (i <= sz - 2 - i)
+//		{
+//			char tmp = *(p+i);
+//			*(p+i) = *(p + sz - 2 - i);
+//			*(p + sz - 2 - i) = tmp;
+//		}
+//	}
+//}
+//int main()
+//{   
+//	char arr[] = "abcdefg";
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	change(arr, sz);
+//	printf("%s\n", arr);
+//	return 0;
+//}
+
+
+
+//调整奇数偶数位置
+//void change(int* p,int sz)
+//{
+//	for (int i = 0; i <= sz - 2;i++)
+//	{
+//		for (int j =0; j <= sz - 2-i ; j++)
+//		{
+//			if (*(p - j + sz - 1) % 2 != 0)
+//			{
+//				int tmp = *(p - j + sz - 1);
+//				*(p - j + sz - 1) = *(p - j + sz-2);
+//				*(p - j + sz-2) = tmp;
+//			}
+//			
+//		}
+//	}
+//}
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	change(arr,sz);
+//	for (int i = 0; i <= sz - 1; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+
+
+
+//模拟strlen函数
+//int strlen(char* p)
+//{
+//	int count = 0;
+//	while (*p++ != '\0')
+//	{
+//		count++;
+//	}
+//	return count+1;
+//}
+//int main()
+//{
+//	char arr[] = "abcdefg";
+//	printf("%d\n",strlen(arr));
+//	return 0;
+//}
+
+
+
+//模拟strcpy
+void strcpy1(char* p, const char* b)
 {
-	int m = 0;
-	if (n >=2)
+	while (*p++ = *b++)
 	{
-		m = n / 2;
-		return n + sum(m);
+
 	}
-	else if (n)
-		return n;
+	
 }
 int main()
 {
-	int n = 20;
-	sum(n);
-	printf("%d\n", sum(n));
+	char ch[] = "abcde";
+	int sz = sizeof(ch) / sizeof(ch[0]);
+	char arr[100]={0};
+	strcpy1(arr, ch);
+	int i = 0;
+printf("%s\n", arr);
 	return 0;
 }
