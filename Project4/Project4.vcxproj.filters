@@ -15,13 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="源.cpp">
+    <ClCompile Include="c语言.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="源1.cpp">
+    <ClCompile Include="C语言1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="game.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="c++.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

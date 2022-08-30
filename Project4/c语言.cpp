@@ -1597,21 +1597,24 @@ void menu()
 
 
 //Ä£Äâstrcpy
-void strcpy1(char* p, const char* b)
-{
-	while (*p++ = *b++)
-	{
+//void strcpy1(char* p, const char* b)
+//{
+//	while (*p++ = *b++)
+//	{
+//
+//	}
+//	
+//}
+//int main()
+//{
+//	char ch[] = "abcde";
+//	int sz = sizeof(ch) / sizeof(ch[0]);
+//	char arr[100]={0};
+//	strcpy1(arr, ch);
+//	int i = 0;
+//printf("%s\n", arr);
+//	return 0;
+//}
 
-	}
-	
-}
-int main()
-{
-	char ch[] = "abcde";
-	int sz = sizeof(ch) / sizeof(ch[0]);
-	char arr[100]={0};
-	strcpy1(arr, ch);
-	int i = 0;
-printf("%s\n", arr);
-	return 0;
-}
+
+
