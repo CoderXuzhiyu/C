@@ -94,6 +94,9 @@ int main()
 	int arr4[2][2] = { 0,1,2,3 };
 	cout << sizeof(arr4) << endl;
 	cout << &arr4 << endl;
+	int b = 0;
 	
 	return 0;
+
+
 }
