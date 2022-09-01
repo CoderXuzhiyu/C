@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include<string>
+#include<stdio.h>
 //int main()
 //{
 //	/*cout << "hello world"<< endl;
@@ -77,26 +78,55 @@ using namespace std;
 //	//cout << "5.xxxx" << endl;
 //	return 0;
 //}
+//int main()
+//{
+//	//int arr[5];
+//	//arr[1] = 10;
+//	//arr[2] = 1;
+//	//arr[3] = 1;
+//	//arr[4] = 1;
+//	//arr[0] = 1;
+//	//cout << arr[1] << endl;
+//	//int arr2[5] = { 10,20,30,40,50 };
+//	//int arr3[] = { 10,20,30,40,50,60 };
+//	//cout << sizeof(arr) / sizeof(arr[0]) << endl;
+//	//cout << (int)arr << endl;
+//	//cout << (int)&arr[0] << endl;
+//	//int arr4[2][2] = { 0,1,2,3 };
+//	//cout << sizeof(arr4) << endl;
+//	//cout << &arr4 << endl;
+//	/*int a = 0;
+//	int* p = &a;
+//	cout << sizeof(char*) << endl;
+//	p = NULL;*/
+//	/*int a, b;
+//	scanf_s("%d%d", &a, &b);
+//	printf("%d %d", a, b);*/
+//	cout << sizeof(int);
+//	return 0;
+
+//
+//}
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	char a;
+//	cin >> a;
+//	cout << a << endl;
+//	cout << a<<a<<a << endl;
+//	return 0;
+//}
+#include<iostream>
+#include<cstdio>
 int main()
 {
-	//int arr[5];
-	//arr[1] = 10;
-	//arr[2] = 1;
-	//arr[3] = 1;
-	//arr[4] = 1;
-	//arr[0] = 1;
-	//cout << arr[1] << endl;
-	//int arr2[5] = { 10,20,30,40,50 };
-	//int arr3[] = { 10,20,30,40,50,60 };
-	//cout << sizeof(arr) / sizeof(arr[0]) << endl;
-	//cout << (int)arr << endl;
-	//cout << (int)&arr[0] << endl;
-	int arr4[2][2] = { 0,1,2,3 };
-	cout << sizeof(arr4) << endl;
-	cout << &arr4 << endl;
-	int b = 0;
-	
-	return 0;
+	int x, a, b, y,z;
+	cin >> x >> a >> b >> y>>z;
+	int k, p, q;
+	p + q * a = x * a * k;
+	p + q * b = y*b*k;
+	z*k = q
 
 
 }
