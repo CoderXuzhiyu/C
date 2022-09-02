@@ -117,16 +117,134 @@ using namespace std;
 //	cout << a<<a<<a << endl;
 //	return 0;
 //}
+//#include<iostream>
+//#include<cstdio>
+//int main()
+//{
+//	int x, a, b, y,z;
+//	cin >> x >> a >> b >> y>>z;
+//	int k, p, q;
+//	p + q * a = x * a * k;
+//	p + q * b = y*b*k;
+//	z*k = q
+//
+//
+//}
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	double r, d, c, s;
+//	cin >> r;
+//	d = r * 2;
+//	double pi = 3.1415926;
+//	c = pi * r * 2;
+//	s = pi * r * r;
+//	cout << fixed << setprecision(4) << d << " " << c << " " << s;
+//	return 0;
+//}
+//#include<iostream>
+//
+//using namespace std;
+//int main()
+//{
+//	float x;
+//	cin >> x;
+//	if (x > 0)
+//	{
+//		cout << (int)x / 1 << endl;
+//	}
+//	else if (x < 0)
+//	{
+//		cout << (int)x / 1 << endl;
+//	}
+//	else
+//		cout << "0" << endl;
+//	return 0;
+//}
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	char ch;
+//	cin >> ch;
+//	cout << (int)ch << endl;
+//	return 0;
+//}
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	int a;
+//	bool b;
+//	cin >> a;
+//	b = a;
+//	cout << b << endl;
+//	return 0;
+//}
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	int arr[5];
+//	for (int i = 0; i <= 4; i++)
+//	{
+//		cin >> arr[i];
+//	}
+//	arr[1] += arr[0] / 3;
+//	arr[4] += arr[0] / 3;
+//	arr[0] = arr[0] / 3;
+//	arr[2] += arr[1] / 3;
+//	arr[0] += arr[1] / 3;
+//	arr[1] = arr[1] / 3;
+//	arr[3] += arr[2] / 3;
+//	arr[1] += arr[2] / 3;
+//	arr[2] = arr[2] / 3;
+//	arr[4] += arr[3] / 3;
+//	arr[2] += arr[3] / 3;
+//	arr[3] = arr[3] / 3;
+//	arr[0] += arr[4] / 3;
+//	arr[3] += arr[4] / 3;
+//	arr[4] = arr[4] / 3;
+//
+//    
+//	for (int i = 0; i <= 4; i++)
+//	{
+//		cout<< arr[i]<<" ";
+//	}
+//
+//	return 0;
+//}
+//#include<stdio.h>
+//using namespace std;
+//int main()
+//{
+//	float x;
+//	cin >> x;
+//	printf("%.3f", x);
+//	return 0;
+//}
+//#include<bits/stdc++.h>
+//using namespace std;
+//int main()
+//{
+//double x;
+//cout<<x<<endl;
+//printf("%.5f\n",x);
+//printf("%e\n",x);
+//printf("%g\n",x);
+//return 0;
+//}
 #include<iostream>
-#include<cstdio>
+#include<stdio.h>
+using namespace std;
 int main()
 {
-	int x, a, b, y,z;
-	cin >> x >> a >> b >> y>>z;
-	int k, p, q;
-	p + q * a = x * a * k;
-	p + q * b = y*b*k;
-	z*k = q
-
-
+	double x;
+	cin >> x;
+	printf("%f\n", x);
+	printf("%.5lf\n", x);
+	printf("%e\n", x);
+	printf("%g\n", x);
+	return 0;
 }
