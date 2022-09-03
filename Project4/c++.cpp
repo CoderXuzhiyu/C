@@ -235,16 +235,88 @@ using namespace std;
 //printf("%g\n",x);
 //return 0;
 //}
+//#include<iostream>
+//#include<stdio.h>
+//using namespace std;
+//int main()
+//{
+//	double x;
+//	cin >> x;
+//	printf("%f\n", x);
+//	printf("%.5lf\n", x);
+//	printf("%e\n", x);
+//	printf("%g\n", x);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	double a, b;
+//	scanf_s("%lf%lf", &a, &b);
+//	printf("%lf", (a / b)-(int)(a/b));
+//return 0;
+//}
+//#include<stdio.h>
+//using namespace std;
+//int main()
+//{
+//	int r;
+//	scanf_s("%d", &r);
+//	double V =( 4 / 3) * 3.14 * r * r * r;
+//	printf("%.5lf", V);
+//	return 0;
+//}
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	cout << pow(2, n) << endl;
+//	return 0;
+//}
+//#include<iostream>
+//using namespace std;
+//int main()
+//{
+//	long long N;
+//	if (N > 0)
+//	{
+//		printf("positive");
+//	}
+//	else if (N < 0)
+//	{
+//		printf("negative");
+//	}
+//	else
+//		printf("zero");
+//	return 0;
+//}
+//#include<iostream>
+//#include<stdio.h>
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	if ((n / 10) != 0 && (n / 100) == 0)
+//		printf("1");
+//	else
+//		printf("0");
+//	return 0;
+//}
 #include<iostream>
 #include<stdio.h>
 using namespace std;
 int main()
 {
-	double x;
-	cin >> x;
-	printf("%f\n", x);
-	printf("%.5lf\n", x);
-	printf("%e\n", x);
-	printf("%g\n", x);
+	int n;
+	cin >> n;
+	if (n != 1 && n != 3 && n != 5)
+	{
+		printf("YES");
+	}
+	else
+		printf("NO");
 	return 0;
 }
