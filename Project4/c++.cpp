@@ -305,18 +305,187 @@ using namespace std;
 //		printf("0");
 //	return 0;
 //}
-#include<iostream>
-#include<stdio.h>
+//#include<iostream>
+//#include<stdio.h>
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	if (n != 1 && n != 3 && n != 5)
+//	{
+//		printf("YES");
+//	}
+//	else
+//		printf("NO");
+//	return 0;
+//}
+//#include<iostream>
+//#include<stdio.h>
+//using namespace std;
+//int main()
+//{
+//	double t1, t2, s;
+//	cin >> s;
+//	t1 = 27 + 23 + s / (double)3;
+//	t2 = s / (double)1.2;
+//	if (t1 > t2)
+//		printf("Walk");
+//	if (t1 < t2)
+//		printf("Bike");
+//	if (t1 == t2)
+//		printf("All");
+//	return 0;
+//}
+//#include<iostream>
+//#include<stdio.h>
+//using namespace std;
+//int main()
+//{
+//	int x;
+//	char c;
+//	cin >> x >> c;
+//	int k;
+//	if (x <= 1000 && c == 'y')
+//		k = 8 + 5;
+//	if (x <= 1000 && c == 'n')
+//		k = 8;
+//	if (x > 1000)
+//	{
+//		if (c =='y')
+//		{
+//			if (((double)(x - 1000) / 500 - (x - 1000) / 500) != 0)
+//				k = 8 + 5 + (((x - 1000) / 500 + 1) * 4);
+//		}
+//		else
+//			k = 8 + 5 + (x - 1000) / 500 * 4;
+//	
+//	if (c == 'n')
+//	{
+//		if (((double)(x - 1000) / 500 - (x - 1000) / 500) != 0)
+//			k = 8 + (((x - 1000) / 500 + 1) * 4);
+//	}
+//	else
+//		k = 8 + (x - 1000) / 500 * 4;
+//}
+//	printf("%d", k);
+//return 0;
+//}
+//int main()1
+//{
+//	int x=1370;
+//	double y = (double)(x - 1000) / 500 - (x - 1000) / 500;
+//	cout << y;
+//	return 0;
+//}
+//using namespace std;
+//int main()
+//{
+//	int a, b, c;
+//	cin >> a >> b >> c;
+//	if (a >= b && a >= c)
+//	{
+//		printf("%d", a);
+//			return 0;
+//	}
+//	else if (b >= a && b >= c)
+//	{
+//		printf("%d", b);
+//		return 0;
+//	}
+//	else
+//	{
+//		printf("%d", c);
+//		return 0;
+//	}
+//}
+//
+//using namespace std;
+//int main()
+//{
+//	int x, y;
+//	cin >> x, y;
+//	if (x >= -1 && x <= 1 && y >= -1 && y <= 1)
+//		printf("yes");
+//	else
+//		printf("no");
+//	return 0;
+//}
+//#include<iostream>
+//#include<stdio.h>
+//using namespace std;
+//int main()
+//{
+//	double a, b, c;
+//	cin >> a >> b >> c;
+//	if (b * b - 4 * a * c > 0)
+//	{
+//		double x1 = (-b + sqrt(b * b - 4 * a * c)) / 2 / a;
+//		double x2 = (-b - sqrt(b * b - 4 * a * c)) / 2 / a;
+//		printf("x1=%.5lf;", x2);
+//		printf("x2=%.5lf", x1);
+//	}
+//	else if (b * b - 4 * a * c == 0)
+//	{
+//		double x1 = (-b + sqrt(b * b - 4 * a * c)) / 2 / a;
+//		printf("x1=x2=%.5lf", x1);
+//	}
+//	else
+//		printf("No answer!");
+//	return 0;
+//}
+//int main()
+//{
+//	cout << sqrt(4);
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int sum = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		int k;
+//		cin >> k;
+//		sum += k;
+//	}
+//	double k = sum / n;
+//	printf("%.2lf", k);
+//	return 0;
+//}
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	double sum = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		float a;
+//		cin >> a;
+//		sum += a;
+//	}
+//	printf("%.lf", (double)sum / n);
+//
+//	return 0;
+//}
+
 using namespace std;
 int main()
 {
 	int n;
 	cin >> n;
-	if (n != 1 && n != 3 && n != 5)
+	long long sum=0;
+	for (int i = 0; i < n; i++)
 	{
-		printf("YES");
+		int k;
+		cin >> k;
+		sum += k;
 	}
-	else
-		printf("NO");
+	cout << sum;
+	printf(" %.5lf", (double)sum / n);
 	return 0;
 }
