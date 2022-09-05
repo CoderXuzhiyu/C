@@ -473,19 +473,149 @@ using namespace std;
 //	return 0;
 //}
 
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	long long sum=0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		int k;
+//		cin >> k;
+//		sum += k;
+//	}
+//	cout << sum;
+//	printf(" %.5lf", (double)sum / n);
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int sumg=0, sums=0, sumb=0;
+//	int n;
+//	cin >> n;
+//	for (int i = 0; i < n; i++)
+//	{
+//		int g, s, b;
+//		cin >> g >> s >> b;
+//		sumg += g;
+//		sums += s;
+//		sumb += b;
+//	}
+//	printf("%d %d %d %d", sumg, sums, sumb, sumg + sums + sumb);
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int m, n;
+//	cin >> m >> n;
+//	int sum = 0;
+//	for (int i = m; i <= n; i++)
+//	{
+//		if (i % 2 != 0)
+//		{
+//			sum += i;
+//		}
+//	}
+//	cout << sum;
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//    int k;
+//    cin >> k;
+//    int sum1 = 0;
+//    int sum5 = 0;
+//    int sum10 = 0;
+//    for (int i = 0; i < k; i++)
+//    {
+//        int n;
+//        scanf_s("%d", &n);
+//        switch (n)
+//        {
+//        case 1:
+//            sum1 += 1;
+//            break;
+//        case 5:
+//            sum5 += 1;
+//            break;
+//        case 10:
+//            sum10 += 1;
+//            break;
+//        }
+//    }
+//    cout << sum1 << endl << sum5 << endl << sum10;
+//    return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int x, n;
+//	double k = x;
+//	cin >> x >> n;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		k = k * (1.001);
+//	}
+//	printf("%.4lf", k);
+//	return 0;
+//}
+
+//int fib(int x)
+//{
+//	if (x <= 2)
+//	{
+//		return 1;
+//	}
+//	else
+//		return fib(x - 1) + fib(x - 2);
+//}
+//
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	for (int i = 0; i < n; i++)
+//	{
+//		int k;
+//		cin >> k;
+//		cout << fib(k)<<endl;
+//	}
+//	return 0;
+//}
+
+
 using namespace std;
 int main()
 {
 	int n;
 	cin >> n;
-	long long sum=0;
-	for (int i = 0; i < n; i++)
+	int c, d;
+	scanf_s("%d %d", &c, &d);
+	double k = (double)c / d;
+	for (int i = 0; i < n - 1; i++)
 	{
-		int k;
-		cin >> k;
-		sum += k;
+		int a, b;
+		cin >> a >> b;
+		if ((double)a / b - k > 0.05)
+		{
+			printf("worse\n");
+		}
+		else if (k - (double)a / b > 0.05)
+		{
+			printf("better\n");
+		}
+		else
+			printf("same\n");
 	}
-	cout << sum;
-	printf(" %.5lf", (double)sum / n);
 	return 0;
 }
