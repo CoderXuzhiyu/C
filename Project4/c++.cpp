@@ -594,28 +594,226 @@ using namespace std;
 //}
 
 
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int c, d;
+//	scanf_s("%d %d", &c, &d);
+//	double k = (double)c / d;
+//	for (int i = 0; i < n - 1; i++)
+//	{
+//		int a, b;
+//		cin >> a >> b;
+//		if ((double)a / b - k > 0.05)
+//		{
+//			printf("worse\n");
+//		}
+//		else if (k - (double)a / b > 0.05)
+//		{
+//			printf("better\n");
+//		}
+//		else
+//			printf("same\n");
+//	}
+//	return 0;
+//}
+
+
+//
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int sum = 0;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		int a, b, c;
+//		cin >> a >> b >> c;
+//		double t = (double)sqrt(a * a + b * b) / 50 * 2 + 1.5 * c;
+//		if (t > (int)t)
+//		{
+//			int k = (int)t + 1;
+//			sum += k;
+//		}
+//		else
+//		{
+//			sum += t;
+//		}
+//	}
+//	printf("%d", sum);
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int m, n;
+//	cin >> m >> n;
+//	int count = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		int k;
+//      cin>>k;
+//		if (m - k >= 0)
+//		{
+//			m -= k;
+//		}
+//		else
+//			count++;
+//	}
+//	cout << count << endl;
+//	return 0;
+//}
+
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	double sum = 0;
+//	if (n > 1)
+//	{
+//		sum = (double)(2 + 1.5);
+//		int a = 2, b = 3, c;
+//		int d = 1, e = 2, f;
+//		for (int i = 1; i <= n - 2; i++)
+//		{
+//			c = a + b;
+//			f = d + e;
+//			sum += (double)c / f;
+//			a = b;
+//			b = c;
+//			d = e;
+//			e = f;
+//		}
+//	}
+//	else
+//	{
+//		sum = 2;
+//	}
+//	printf("%.4lf", sum);
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	double sum = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		sum += 1 / i * (pow(-1, i + 1));
+//	}
+//	printf("%.4lf", sum);
+//	return 0;
+//}
+//using namespace std;
+//int main()
+//{
+//	int a = 1;
+//	cout <<1.0/2.0 * a;
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int a, b, c;
+//	cin >> a >> b >> c;
+//	for (long long i = 2; i <= 1000000; i++)
+//	{
+//		if (a % i == b % i && b % i == c % i)
+//		{
+//			cout << i;
+//			break;
+//		}
+//	}
+//}
+//
+//using namespace std;
+//int main()
+//{
+//	int a, b, n;
+//	cin >> a >> b >> n;
+//	double k = (double)a / b;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		k = (double)k * 10;
+//	}
+//	int f = (int)k % 10;
+//	cout << f;
+//	return 0;
+//	}
+
+
+//using namespace std;
+//int main()
+//{
+//	int a, b;
+//	cin >> a >> b;
+//	long long ret = 1;
+//	for (int i = 1; i <= b; i++)
+//	{
+//		ret *= a;
+//	}
+//	
+//	switch (ret % 7)
+//	{
+//	case 0:
+//		printf("Sunday");
+//		break;
+//	case 1:
+//		printf("Monday");
+//		break;
+//	case 2:
+//		printf("Tuesday");
+//		break;
+//	case 3:
+//		printf("Wednesday");
+//		break;
+//	case 4:
+//		printf("Thursday");
+//		break;
+//	case 5:
+//		printf("Friday");
+//		break;
+//	case 6:
+//		printf("Saturday");
+//		break;
+//	}
+//	return 0;
+//}
+
+
+
 using namespace std;
 int main()
 {
-	int n;
-	cin >> n;
-	int c, d;
-	scanf_s("%d %d", &c, &d);
-	double k = (double)c / d;
-	for (int i = 0; i < n - 1; i++)
+	int a, b;
+	int ret = 1;
+	cin >> a >> b;
+	for (int i = 1; i <= b; i++)
 	{
-		int a, b;
-		cin >> a >> b;
-		if ((double)a / b - k > 0.05)
-		{
-			printf("worse\n");
-		}
-		else if (k - (double)a / b > 0.05)
-		{
-			printf("better\n");
-		}
-		else
-			printf("same\n");
+		ret *= a;
+		ret %= 1000;
 	}
+	if (ret >= 100)
+	{
+		cout << ret;
+	}
+	else if (ret < 100 && ret >= 10)
+	{
+		cout << "0" << ret;
+	}
+	else
+		cout << "00" << ret;
 	return 0;
 }
