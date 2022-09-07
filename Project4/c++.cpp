@@ -794,26 +794,280 @@ using namespace std;
 
 
 
+//using namespace std;
+//int main()
+//{
+//	int a, b;
+//	int ret = 1;
+//	cin >> a >> b;
+//	for (int i = 1; i <= b; i++)
+//	{
+//		ret *= a;
+//		ret %= 1000;
+//	}
+//	if (ret >= 100)
+//	{
+//		cout << ret;
+//	}
+//	else if (ret < 100 && ret >= 10)
+//	{
+//		cout << "0" << ret;
+//	}
+//	else
+//		cout << "00" << ret;
+//	return 0;
+//}
+
+
+
+//using namespace std;
+//int main()
+//{
+//	int h;
+//	cin >> h;
+//	double sum = -h;
+//	for (int i = 1; i <= 10; i++)
+//	{
+//		sum += h * 2;
+//		h /= 2;
+//	}
+//	cout << sum << endl;
+//	cout << h;
+//	return 0;
+//}
+
+//int main()
+//{
+//	long long m;
+//	cin >> m;
+//	cout << m / 10;
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	double sum = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		int k = 1;
+//		for (int j = 1; j <= n + 1 - i; j++)
+//		{
+//			k *= j;
+//		}
+//		sum += (double)1 / k;
+//
+//	}
+//	printf("%.10lf", sum);
+//	return 0;
+//}
+//using namespace std;
+//int main()
+//{
+//	float x;
+//	int n;
+//	cin >> x>>n;
+//	double sum = 0;
+//	double k = 1;
+//	for (int i = 0; i <= n; i++)
+//	{
+//
+//		sum += k;
+//		k *= x;
+//	}
+//	printf("%.2lf", sum);
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	long long ret = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		if (i % 7 != 0 && i % 10 != 7 && (i / 10) % 10 != 7)
+//		{
+//			ret += i * i;
+//		}
+//	}
+//	cout << ret;
+//	return 0;
+//}
+
+
+//
+//using namespace std;
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//	int count = 0;
+//	for (int i = n; i <= m; i++)
+//	{
+//		while (i != 0)
+//		{
+//			if (i % 10 == 2)
+//			{
+//				count++;
+//			}
+//			i /= 10;
+//		}
+//	}
+//	cout << count;
+//	return 0;
+//}
+
+
+//int prime(int x)
+//{
+//	for (int j = 2; j <= x / 2; j++)
+//	{
+//		if (x % j == 0)
+//			return 0;
+//	}
+//	return 1;
+//}
+//
+//using namespace std;
+//int main()
+//{
+//	long long n;
+//	cin >> n;
+//	for (int i = 2; i <= n / 2; i++)
+//	{
+//		double k;
+//		k = (double)n / i;
+//		if (k - (int)k == 0)
+//		{
+//			if (prime(k) == 1)
+//			{
+//				printf("%d", (int)k);
+//				break;
+//			}
+//		}
+//	}
+//	return 0;
+//}
+
+//int prime(int x)
+//{
+//	for (int j = 2; j <= x / 2; j++)
+//	{
+//		if (x % j == 0)
+//			return 0;
+//	}
+//	return 1;
+//}
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	int count = 0;
+//	cin >> n;
+//	for (int i = 2;; i++)
+//	{
+//		if (prime(i) == 1)
+//		{
+//			count++;
+//		}
+//		if (count == n)
+//		{
+//			printf("%d", i);
+//			break;
+//		}
+//	}
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int a, b, c;
+//	cin >> a >> b >> c;
+//	int count = 0;
+//	for (int i = 1; i <= c / a; i++)
+//	{
+//		double k = (double)(c - a * i) / b;
+//		if (k - (int)k == 0)
+//		{
+//			count++;
+//		}
+//	}
+//	cout << count;
+//	return 0;
+//}
+
+//
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	int arr[101];
+//	cin >> n;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		cin >> arr[i];
+//	}
+//	int k;
+//	cin >> k;
+//	int sum = 0;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		if (arr[i] == k)
+//			sum++;
+//	}
+//	cout << sum;
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	double sum = 0;
+//	for (int i = 0; i <= 9; i++)
+//	{
+//		double k;
+//		cin >> k;
+//		sum += k;
+//	}
+//	printf("%.1lf", sum);
+//	return 0;
+//}
+
+
 using namespace std;
 int main()
 {
-	int a, b;
-	int ret = 1;
-	cin >> a >> b;
-	for (int i = 1; i <= b; i++)
-	{
-		ret *= a;
-		ret %= 1000;
-	}
-	if (ret >= 100)
-	{
-		cout << ret;
-	}
-	else if (ret < 100 && ret >= 10)
-	{
-		cout << "0" << ret;
-	}
-	else
-		cout << "00" << ret;
-	return 0;
+    int n;
+    cin >> n;
+    int arr[100];
+    for (int i = 0; i <= n - 1; i++)
+    {
+        cin >> arr[i];
+    }
+    for (int i = 0; i <= n - 2; i++)
+    {
+        for (int j = n - 1 ; j >= 1+i; j--)
+        {
+            if (arr[j] <= arr[j - 1])
+            {
+                int tmp = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = tmp;
+            }
+        }
+    }
+    for (int i = 0; i <= n - 1; i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    return 0;
 }
