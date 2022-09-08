@@ -1043,31 +1043,301 @@ using namespace std;
 //}
 
 
+//using namespace std;
+//int main()
+//{
+//    int n;
+//    cin >> n;
+//    int arr[100];
+//    for (int i = 0; i <= n - 1; i++)
+//    {
+//        cin >> arr[i];
+//    }
+//    for (int i = 0; i <= n - 2; i++)
+//    {
+//        for (int j = n - 1 ; j >= 1+i; j--)
+//        {
+//            if (arr[j] <= arr[j - 1])
+//            {
+//                int tmp = arr[j];
+//                arr[j] = arr[j - 1];
+//                arr[j - 1] = tmp;
+//            }
+//        }
+//    }
+//    for (int i = 0; i <= n - 1; i++)
+//    {
+//        printf("%d ",arr[i]);
+//    }
+//    return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int arr[100];
+//	int sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		cin >> arr[i];
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		if (arr[i] <= 18)
+//			sum1++;
+//		else if (arr[i] > 18 && arr[i] <= 35)
+//			sum2++;
+//		else if (arr[i] > 35 && arr[i] <= 60)
+//			sum3++;
+//		else
+//			sum4++;
+//	}
+//	printf("%.2lf%%\n", (double)sum1 / n * 100);
+//	printf("%.2lf%%\n", (double)sum2 / n * 100);
+//	printf("%.2lf%%\n", (double)sum3 / n * 100);
+//	printf("%.2lf%%", (double)sum4 / n * 100);
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int arr1[1000];
+//	int arr2[1000];
+//	int sum = 0;
+//
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		cin >> arr1[i];
+//	}
+//	 for (int j = 0; j <= n - 1; j++)
+//		{
+//			cin >> arr2[j];
+//		}
+//	  for (int i = 0; i <= n - 1; i++)
+//		{
+//			sum += arr1[i] * arr2[i];
+//		}
+//	
+//	printf("%d", sum);
+//	return 0;
+//}
+
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int arr[5000];
+//	for (int i = 1; i <= n; i++)
+//	{
+//		arr[i] = 1;
+//	}
+//	for (int i = 1; i <= n; i++)
+//	{
+//		for (int j = 1; j <= n; j++)
+//		{
+//			if (j % i == 0)
+//			{
+//				switch (arr[j])
+//				{
+//				case 1:
+//					arr[j] = 0;
+//					break;
+//				case 0:
+//					arr[j] = 1;
+//					break;
+//				}
+//			}
+//		}
+//	}
+//			for (int i = 1; i <= n; i++)
+//			{
+//				if (arr[i] == 1)
+//				{
+//
+//				}
+//				else
+//					printf("%d ", i);
+//			}
+//
+//			return 0;
+//}
+
+
+
+//using namespace std;
+//int main ()
+//{
+//int n;
+//cin >> n;
+//int arr[10000];
+//int b = 2;
+//for (int i = 0; i <= n - 1; i++)
+//{
+//cin >> arr[i];
+//}
+//int c;
+//cin >> c;
+//for (int i = 0; i <= n - 1; i++)
+//{
+//	if (arr[i] == c)
+//	{
+//		printf("%d", i);
+//		b = 1;
+//		break;
+//	}
+//}
+//if (b == 2)
+//printf("%d",-1);
+//
+//}
+
+//
+//using namespace std;
+//int main()
+//{
+//	int N;
+//	cin >> N;
+//	int arr[100];
+//	long long sum = 0;
+//	for (int i = 0; i <= N - 1; i++)
+//	{
+//		cin >> arr[i];
+//	}
+//	for (int j = 0; j <= N - 2; j++)
+//	{
+//		if (arr[j] >= arr[j + 1])
+//		{
+//			int tmp = arr[j+1];
+//			arr[j + 1] = arr[j];
+//			arr[j] = tmp;
+//		}
+//	}
+//	for (int i = 0; i <= N - 1; i++)
+//	{
+//		if (arr[i] != arr[N - 1])
+//		{
+//			sum += arr[i];
+//		}
+//	}
+//	cout << sum;
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int arr[300];
+//	int n;
+//	cin >> n;
+//	int sum1 = 0;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		cin >> arr[i];
+//		sum1 += arr[i];
+//	}
+//	int sum2 = 0;
+//	for (int i = 0; i <= n - 2; i++)
+//	{
+//		if (arr[i] >= arr[i + 1])
+//		{
+//			int tmp = arr[i];
+//			arr[i] = arr[i + 1];
+//			arr[i + 1] = tmp;
+//		}
+//	}
+//	for (int i = n - 2; i >= 1; i--)
+//	{
+//		if (arr[i] <= arr[i - 1])
+//		{
+//			int tmp = arr[i];
+//			arr[i] = arr[i - 1];
+//			arr[i - 1] = tmp;
+//		}
+//	}
+//	for (int i = 1; i <= n - 2; i++)
+//		sum2 += arr[i];
+//	double c = (double)sum2/(n-2) - (double)sum1 / n;
+//	printf("%.2lf %.2lf", (double)sum2 / (n-2), abs(c));
+//	return 0;
+//}
+
+
+//#include<algorithm>
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int arr[100000];
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		cin >> arr[i];
+//	}
+//	sort(arr, arr + n);
+//	for (int i = 0; i <= arr[n - 1]; i++)
+//	{
+//		int count = 0;
+//		for (int j = 0; j <= n - 1; j++)
+//		{
+//			if (arr[j] > i)
+//				break;
+//			if (arr[j] == i)
+//				count++;
+//		}
+//		cout << count << endl;
+//	}
+//	return 0;
+//}
+
+
+//
+//using namespace std;
+//int a[100001];
+//int n, x, m = 0;
+//int main()
+//{
+//	cin >> n;//数组大小 
+//	for (int i = 1; i <= n; i++)//读入数组 
+//	{
+//		cin >> x;
+//		a[x]++;
+//		if (m < x)
+//			m = x;//找出最大数
+//	}
+//	for (int i = 0; i <= m; i++)
+//		cout << a[i] << endl;
+//	return 0;
+//}
+
 using namespace std;
+int x, n, m=0;
+int a[100001];
 int main()
 {
-    int n;
-    cin >> n;
-    int arr[100];
-    for (int i = 0; i <= n - 1; i++)
-    {
-        cin >> arr[i];
-    }
-    for (int i = 0; i <= n - 2; i++)
-    {
-        for (int j = n - 1 ; j >= 1+i; j--)
-        {
-            if (arr[j] <= arr[j - 1])
-            {
-                int tmp = arr[j];
-                arr[j] = arr[j - 1];
-                arr[j - 1] = tmp;
-            }
-        }
-    }
-    for (int i = 0; i <= n - 1; i++)
-    {
-        printf("%d ",arr[i]);
-    }
-    return 0;
+	
+	cin >> n;
+	for (int i = 1; i <= n; i++)
+	{
+
+		cin >> x;
+		a[x]++;
+		if (x > m)
+			m = x;
+	}
+	for (int i = 0; i <= m; i++)
+	{
+		cout << a[i] << endl;
+	}
+	return 0;
 }
