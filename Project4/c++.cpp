@@ -1320,24 +1320,326 @@ using namespace std;
 //	return 0;
 //}
 
+//using namespace std;
+//int x, n, m=0;
+//int a[100001];
+//int main()
+//{
+//	
+//	cin >> n;
+//	for (int i = 1; i <= n; i++)
+//	{
+//
+//		cin >> x;
+//		a[x]++;
+//		if (x > m)
+//			m = x;
+//	}
+//	for (int i = 0; i <= m; i++)
+//	{
+//		cout << a[i] << endl;
+//	}
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int arr[100];
+//	int count = 0;
+//	int sum1 = 1;
+//	int sum2 = 0;
+//	cin >> arr[0];
+//	for (int i = 1; i <= n - 1; i++)
+//	{
+//		cin >> arr[i];
+//		if (arr[i] == arr[i - 1])
+//		{
+//			sum1++;
+//		}
+//		else
+//		{
+//			if (sum1 > count)
+//			{
+//				count = sum1;
+//			}
+//			sum1 = 1;
+//		}
+//	}
+//	printf("%d", count);
+//	return 0;
+//}
+
+//int arr[20000];
+//int repeatment(int x)
+//{
+//	for (int j = 0; j < x; j++)
+//	{
+//		if (arr[x] == arr[j])
+//			return 1;
+//	}
+//
+//	return 0;
+//}
+//
+//
+//using namespace std;
+//
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		cin >> arr[i];
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		if (repeatment(i) == 0)
+//		{
+//			printf("%d ", arr[i]);
+//		}
+//	}
+//	return 0;
+//}
+
+//
+//using namespace std;
+//int main()
+//{
+//	int a[5][5];
+//	int* p = &a[0][0];
+//	for (int i = 0; i <= 24; i++)
+//	{
+//		cin >> *p;
+//		p++;
+//	}
+//	int m, n;
+//	cin >> m >> n;
+//	for (int i = 0; i <= 4; i++)
+//	{
+//		int* t = &a[0][0];
+//		int tmp = *(t + 5 * m - 5 + i);
+//		*(t + 5 * m - 5 + i) = *(t + 5 * n - 5 + i);
+//		*(t + 5 * n - 5 + i) = tmp;
+//	}
+//	for (int i = 0; i <= 4; i++)
+//	{
+//		for (int j = 0; j <= 4; j++)
+//		{
+//			cout << a[i][j] <<" ";
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int a, b;
+//	cin >> a >> b;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		printf("(%d,%d) ", a, i);
+//	}
+//	cout << endl;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		printf("(%d,%d) ", i, b);
+//	}
+//	cout << endl;
+//	for (int i = -n+1,  j = -n+1; i <= n-1, j <= n-1; i++, j++)
+//	{
+//		if (a + i >= 1 && b + j >= 1 && a + i <= n && b + j <= n)
+//		{
+//			printf("(%d,%d) ", a + i, b + j);
+//		}
+//	}
+//	cout << endl;
+//	for (int i = n-1,  j = n-1; i >=-n+1, j >=-n+1; i--, j--)
+//	{
+//		if (a + i >= 1 && b - j >= 1 && a + i <= n && b - j <= n)
+//		{
+//			printf("(%d,%d) ", a + i, b - j);
+//		}
+//	}
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int m, n;
+//	cin >> m >> n;
+//	int sum = 0;
+//	for (int i = 0; i <= m - 1; i++)
+//	{
+//		for (int j = 0; j <= n - 1; j++)
+//		{
+//			int k;
+//			cin >> k;
+//			if (i == 0 || j == 0 || i == m - 1 || j == n - 1)
+//				sum += k;
+//			
+//		}
+//	}
+//	cout << sum;
+//	return 0;
+//}
+
+//#include<stdio.h>
+//using namespace std;
+//int main()
+//{
+//	int a[5][5];
+//	int c=0;
+//	for (int i = 0; i <= 4; i++)
+//	{
+//		for (int j = 0; j <= 4; j++)
+//		{
+//			cin >> a[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= 4; i++)
+//	{
+//		int g = 1;
+//		for (int j = 0; j <= 4; j++)
+//		{
+//			if (a[i][c] < a[i][j])
+//			{
+//				c = j;
+//			}
+//			
+//		}
+//		for (int f = 0; f <= 4; f++)
+//		{
+//			if (a[f][c] < a[i][c])
+//				g = 0;
+//		}
+//		if (g == 1)
+//		{
+//			printf("%d %d %d", i+1, c+1, a[i][c]);
+//			return 0;
+//		}
+//	}
+//	printf("not found");
+//	return 0;
+//}
+//
+//using namespace std;
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//	int a[100][100];
+//	int b[100][100];
+//	int sum = 0;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			cin >> a[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			cin >> b[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <=m - 1; j++)
+//		{
+//			if (a[i][j] == b[i][j])
+//			{
+//				sum++;
+//			}
+//		}
+//	}
+//	printf("%.2lf", (double)sum / (n * m)*100);
+//	return 0;
+//}
+
+//
+//int a[100][100];
+//int b[100][100];
+//using namespace std;
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			cin >> a[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			cin >> b[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			a[i][j] += b[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			printf("%d ", a[i][j]);
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
+
 using namespace std;
-int x, n, m=0;
-int a[100001];
 int main()
 {
-	
-	cin >> n;
-	for (int i = 1; i <= n; i++)
+	int n, m, k;
+	cin >> n >> m >> k;
+	int a[100][100];
+	int b[100][100];
+	int c[100][100];
+	for (int i = 0; i <= n - 1; i++)
 	{
-
-		cin >> x;
-		a[x]++;
-		if (x > m)
-			m = x;
+		for (int j = 0; j <= m - 1; j++)
+		{
+			cin >> a[i][j];
+		}
 	}
-	for (int i = 0; i <= m; i++)
+	for (int i = 0; i <= m - 1; i++)
 	{
-		cout << a[i] << endl;
+		for (int j = 0; j <= k - 1; j++)
+		{
+			cin >> b[i][j];
+		}
+	}
+	for (int i = 0; i <= n - 1; i++)
+	{
+		for (int j = 0; j <= k - 1; j++)
+		{
+			int c;
+			for (int p = 0; p <= m - 1; p++)
+			{
+				c = a[i][0] * b[0][j];
+			}
+		}
 	}
 	return 0;
 }
