@@ -1608,36 +1608,351 @@ using namespace std;
 //	return 0;
 //}
 
+//using namespace std;
+//int a[100][100];
+//int b[100][100];
+//int c[100][100];
+//int main()
+//{
+//	int n, m, k;
+//	cin >> n >> m >> k;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			cin >> a[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= m - 1; i++)
+//	{
+//		for (int j = 0; j <= k - 1; j++)
+//		{
+//			cin >> b[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= k - 1; j++)
+//		{
+//			for (int p = 0; p <= m - 1; p++)
+//			{
+//				c[i][j] += a[i][p] * b[p][j];
+//
+//			}
+//		}
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= k - 1; j++)
+//		{
+//			printf("%d ", c[i][j]);
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
+
+//int a[100][100];
+//using namespace std;
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			cin >> a[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= m - 1; i++)
+//	{
+//		for (int j = 0; j <= n - 1; j++)
+//		{
+//			printf("%d ", a[j][i]);
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
+
+//int a[100][100];
+//using namespace std;
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			cin >> a[i][j];
+//		}
+//	}
+//	for (int j = 0; j <= m - 1; j++)
+//	{
+//		for (int i = n - 1; i >= 0; i--)
+//		{
+//			printf("%d ", a[i][j]);
+//		}
+//		cout << endl;
+//	}
+//	return 0;
+//}
+
+
+//int a[100][100];
+//int b[100][100];
+//using namespace std;
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//	
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			cin >> a[i][j];
+//		}
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			b[i][j] = a[i][j];
+//		}
+//	}
+//	for (int i = 1; i <= n - 2; i++)
+//	{
+//		for (int j = 1; j <= m - 2; j++)
+//		{
+//		   int c = round((double)(a[i - 1][j] + a[i][j - 1] + a[i][j + 1] + a[i + 1][j] + a[i][j])/5);
+//		   b[i][j] = c;
+//		}
+//	}
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		for (int j = 0; j <= m - 1; j++)
+//		{
+//			printf("%d ", b[i][j]);
+//		}
+//		cout << endl;
+//	}
+//	
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int n = round(1.6);
+//	cout << n;
+//	return 0;
+//}
+
+
+
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	getline(cin, a);
+//	int sum = 0;
+//	int sz = sizeof(a) / sizeof(a[0]);
+//	for (int i = 0; i <= a.length() - 1; i++)
+//	{
+//		if (a[i] >= '0' && a[i] <= '9')
+//		{
+//			sum++;
+//		}
+//	}
+//	cout << sum << endl;
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	cin >> a;
+//	char* p = &a[0];
+//	for (int i = 0; i <= a.length() - 1; i++)
+//	{
+//		int k = 0;
+//		for (int j = i + 1; j <= a.length() - 1; j++)
+//		{
+//			
+//			if (*(p + i) == *(p + j))
+//			{
+//				k = 1;
+//			}
+//
+//		}
+//		for (int j = 0; j <= i-1; j++)
+//		{
+//
+//			if (*(p + i) == *(p + j))
+//			{
+//				k = 1;
+//			}
+//
+//		}
+//		if (k == 0)
+//		{
+//			printf("%c", a[i]);
+//			return 0;
+//		}
+//	}
+//	printf("no");
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	float n;
+//	cin >> n;
+//	string a;
+//	string b;
+//	string c;
+//	getline(cin, c);
+//	getline(cin, a);
+//	getline(cin, b);
+//	int count = 0;
+//	for (int i = 0; i <= a.length() - 1; i++)
+//	{
+//		if (a[i] == b[i])
+//			count++;
+//	}
+//	double k = (double)count / a.length();
+//	if (k >= n)
+//		printf("yes");
+//	else
+//		printf("no");
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	string c;
+//	
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		getline(cin, c);
+//		string a, b;
+//		getline(cin, a);
+//		getline(cin, b);
+//		if ((a == "Rock" && b == "Scissors") || (a == "Scissors" && b == "Paper") || (a == "Paper" && b == "Rock"))
+//		{
+//			printf("Player1\n");
+//		}
+//		else if ((b == "Rock" && a == "Scissors") || (b == "Scissors" && a == "Paper") || (b == "Paper" && a == "Rock"))
+//		{
+//			printf("Player2\n");
+//		}
+//		else
+//			printf("Tie\n");
+//	}
+//	return 0;
+//}
+
+
+//using namespace std;
+//string a;
+//string b;
+//int main()
+//{
+//	cin >> a;
+//	for (int i = 0; i <= a.size() - 2; i++)
+//	{
+//
+//		b[i] = a[i] + a[i + 1];
+//	}
+//	b[a.size() - 1] = a[a.size() - 1] + a[0];
+//	for (int i = 0; i < a.size(); i++)
+//		cout << b[i];
+//	return 0;
+//}
+
+////using namespace std;
+//int main()
+//{
+//	int c = 101;
+//	char b = (int)c;
+//	printf("%c", b);
+//	return 0;
+//}
+
+
+//using namespace std;
+//
+//int main()
+//{
+//	string a, b[255];
+//	cin >> a;
+//	for (int i = 0; i <= a.length() - 1; i++)
+//	{
+//		if (a[i] == 'A')
+//			b[i] = 'T';
+//		else if (a[i] == 'G')
+//			b[i] = 'C';
+//		else if (a[i] == 'T')
+//			b[i] = 'A';
+//		else if (a[i] == 'C')
+//			b[i] = 'G';
+//	}
+//	for (int i = 0; i <= a.length() - 1; i++)
+//		cout << b[i];
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		string a;
+//		cin >> a;
+//		if (a[0] >= 'a'&&a[0]<='z')
+//		{
+//			a[0] -= 32;
+//		}
+//		for (int j = 1; j <= a.size() - 1; j++)
+//		{
+//			if (a[j] <= 'Z'&&a[j]>='A')
+//			{
+//				a[j] += 32;
+//			}
+//		}
+//		for (int j = 0; j <= a.size() - 1; j++)
+//			cout << a[j];
+//	}
+//	return 0;
+//}
+
+
 using namespace std;
 int main()
 {
-	int n, m, k;
-	cin >> n >> m >> k;
-	int a[100][100];
-	int b[100][100];
-	int c[100][100];
-	for (int i = 0; i <= n - 1; i++)
+	string a, b;
+	cin >> a >> b;
+	int c = 0;
+	if (a.length() >= b.length())
 	{
-		for (int j = 0; j <= m - 1; j++)
+		for (int i = 0; i <= b.length() - 1; i++)
 		{
-			cin >> a[i][j];
-		}
-	}
-	for (int i = 0; i <= m - 1; i++)
-	{
-		for (int j = 0; j <= k - 1; j++)
-		{
-			cin >> b[i][j];
-		}
-	}
-	for (int i = 0; i <= n - 1; i++)
-	{
-		for (int j = 0; j <= k - 1; j++)
-		{
-			int c;
-			for (int p = 0; p <= m - 1; p++)
+			if (b[c] == a[i])
 			{
-				c = a[i][0] * b[0][j];
+				c++;
 			}
 		}
 	}
