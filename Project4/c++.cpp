@@ -1940,22 +1940,84 @@ using namespace std;
 //}
 
 
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	cin >> a;
+//	int k = a.size() - 1;
+//	if (k + 1 > 2&&a[k] == 'r' && a[k - 1] == 'e' && k + 1 > 2)
+//	{
+//		a[k] = '\0';
+//		a[k - 1] = '\0';
+//	}
+//	else if (k + 1 > 3&&a[k] == 'g' && a[k - 1] == 'n' && a[k - 2] == 'i' && k + 1 > 3)
+//	{
+//		a[k] = '\0';
+//			a[k - 1] = '\0';
+//			a[k - 2] = '\0';
+//	}
+//	else if (k + 1 > 2&&a[k] == 'y' && a[k - 1] == 'l' && k + 1 > 2)
+//	{
+//		a[k] = '\0';
+//		a[k - 1] = '\0';
+//	}
+//	cout << a;
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	getline(cin, a);
+//	int sum = 0;
+//	for (int i = 0; i <= a.size() - 2; i++)
+//	{
+//		if (a[i] != ' ')
+//		{
+//			sum++;
+//		}
+//		else if(a[i]==' '&&a[i+1]!=' ')
+//		{
+//			printf("%d,", sum);
+//			
+//			sum = 0;
+//		}
+//	}
+//	printf("%d", sum + 1);
+//	return 0;
+//}
+
 using namespace std;
 int main()
 {
-	string a, b;
-	cin >> a >> b;
-	int c = 0;
-	if (a.length() >= b.length())
+	string a;
+	getline(cin, a);
+	int sum = 0;
+	int length1 = 0;
+	int length2 = 0;
+	char* p;
+	for (int i = 0; i <= a.size() - 1; i++)
 	{
-		for (int i = 0; i <= b.length() - 1; i++)
+		if (a[i] != ' ' && a[i] != ',' && a[i] != '.')
 		{
-			if (b[c] == a[i])
+			sum++;
+		}
+		else
+		{
+			if (sum > length1)
 			{
-				c++;
+				p = &a[i];
+				length1 = sum;
 			}
+			sum = 0;
 		}
 	}
-
+	for (int i = 0; i <= sum - 1; i++)
+	{
+		printf("%c", *(p+i));
+	}
 	return 0;
 }
