@@ -1990,34 +1990,458 @@ using namespace std;
 //	return 0;
 //}
 
+
+
+
+
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	getline(cin, a);
+//	int sum = 0;
+//	int length1 = 0;
+//	int length2 = 0;
+//	char* p=NULL;
+//	for (int i = 0; i <= a.size() - 1; i++)
+//	{
+//		if (a[i] != ' ' && a[i] != ',' && a[i] != '.')
+//		{
+//			sum++;
+//		}
+//		else
+//		{
+//			if (sum > length1)
+//			{
+//				p = &a[i];
+//				length1 = sum;
+//			}
+//			sum = 0;
+//		}
+//	}
+//	for (int i =length1; i >= 1; i--)
+//	{
+//		printf("%c", *(p-i));
+//	}
+//	cout << endl;
+//	length2 = length1;
+//	for (int i = 0; i <= a.size() - 1; i++)
+//	{
+//		if (a[i] != ' ' && a[i] != ',' && a[i] != '.')
+//		{
+//			sum++;
+//		}
+//		else
+//		{
+//			if (sum < length2)
+//			{
+//				p = &a[i];
+//				length2 = sum;
+//			}
+//			sum = 0;
+//		}
+//	}
+//	for (int i = length2; i >= 1; i--)
+//	{
+//		printf("%c", *(p - i));
+//	}
+//	return 0;
+//}
+//
+//
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	getline(cin, a);
+//	int sum = 0;
+//	for (int i = 0; i <= a.length() - 1; i++)
+//	{
+//		if (a[i] != ' ' && a[i] != '.' && a[i] != '\0' && i != a.length() - 1)
+//		{
+//			sum++;
+//		}
+//		else
+//		{
+//			if (i == a.length() - 1)
+//			{
+//				sum++;
+//				i++;
+//			}
+//			for (int j = 1; j <= sum; j++)
+//			{
+//				if(a[i-j]!='.')
+//				cout << a[i - j];
+//			}
+//			printf("\n");
+//			sum = 0;
+//		}
+//	}
+//	return 0;
+//}
+
+
+
+//using namespace std;
+//int main()
+//{
+//	int b[10]={0};
+//	string a;
+//	cin >> a;
+//	for (int i = 0; i <= a.length() - 1; i++)
+//	{
+//		b[(int)a[i]-48]++;
+//	}
+//	for (int i = 0; i <= 9; i++)
+//	{
+//		if(b[i]!=0)
+//		cout << b[i] << i;
+//	}
+//	return 0;
+//}
+
+//
+//
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	string b;
+//	cin >> a;
+//	cin >> b;
+//	cout << b[]
+//}
+
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	cin >> a;
+//	int sum = 1;
+//	for (int i = 0; i <= a.length() - 2; i++)
+//	{
+//		if (a[i] == a[i + 1])
+//		{
+//			sum++;
+//		}
+//		else
+//		{
+//			printf("%d", sum);
+//			cout << a[i];
+//			sum = 1;;
+//		}
+//	}
+//	if (a[a.length() - 2] == a[a.length() - 1])
+//	{
+//		cout << sum << a[a.length() - 1];
+//	}
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	string b;
+//	cin >> a;
+//	for (int i = 0; i <= a.length() - 1; i++)
+//	{
+//		if (a[i] == a[a.length() - 1 - i])
+//		{
+//
+//		}
+//		else
+//		{
+//			printf("no");
+//			return 0;
+//		}
+//	}
+//	printf("yes");
+//	return 0;
+//}
+//
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int m = -1;
+//	string a;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		int g;
+//		string name;
+//		cin >> g;
+//		cin >> name;
+//		if (m < g)
+//		{
+//			m = g;
+//			a = name;
+//		}
+//	}
+//	cout << a;
+//	return 0;
+//}
+
+
+
+//using namespace std;
+//int main()
+//{
+//	int k;
+//	cin >> k;
+//	string a;
+//	cin >> a;
+//	int sum = 1;
+//	for(int i=0;i<=a.length() - 2; i++)
+//	{ 
+//		if (a[i] == a[i + 1])
+//		{
+//			sum++;
+//	    }
+//		if (sum == k)
+//		{
+//			cout << a[i];
+//			return 0;
+//		}
+//		if (a[i] != a[i + 1])
+//		{
+//			sum = 1;
+//		}
+//		
+//	}
+//	printf("No");
+//	return 0;
+//}
+//
+//
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	for (int i = 2; i <= n; i++)
+//	{   
+//		int sum = 0;
+//		for (int j = 1; j <= sqrt(i); j++)
+//		{
+//			if (i % j == 0)
+//			{
+//				sum += j;
+//				sum += i / j;
+//			}
+//		}
+//		sum -= i;
+//		if (sum == i)
+//		{
+//			printf("%d", i);
+//			cout << endl;
+//		}
+//	}
+//	return 0;
+//}
+
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int sum = 0;
+//	for (int i = 2; i <= n; i++)
+//	{
+//		int a = 0;
+//		for (int j = 2; j <= sqrt(i); j++)
+//		{
+//			if (i % j == 0)
+//			{
+//				a = 1;
+//				break;
+//			}
+//		}
+//		if (a == 0)
+//		{
+//			sum++;
+//		}
+//	}
+//	cout << sum;
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int a, b, c;
+//	cin >> a >>b>>c;
+//	int d = max(max(a, b), c);
+//	int e = max(max(a + b, b), c);
+//	int f = max(max(a, b), b + c);
+//	double m = (double)d / e / f;
+//	printf("%.3lf",m );
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int a, c;
+//	char b;
+//	cin >> a >> b >> c;
+//	if (b == '+')
+//	{
+//		cout << a + c;
+//	}
+//	else if (b == '-')
+//	{
+//		cout << a - c;
+//	}
+//	else if (b== '*')
+//	{
+//		cout << a * c;
+//	}
+//	else if (b == '/')
+//	{
+//		cout << a / c;
+//	}
+//	else
+//		cout << a % c;
+//	return 0;
+//}
+
+//
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int sum == 0;
+//	for (int i = 0; i <= n - 1; i++)
+//	{
+//		string n;
+//		float t;
+//		int c;
+//		cin >> n >> t >> c;
+//		if (t >= 37.5 && c == 1)
+//		{
+//			sum++;
+//			cout << n << endl;
+//		}
+//	}
+//	cout << sum;
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int a = 0;
+//	int c=0;
+//	int b = 0;
+//	int n;
+//	cin >> n;
+//	for (int i = 3; i <= n; i += 2)
+//	{
+//		a = 0;
+//		for (int j = 3; j <= sqrt(i); j += 2)
+//		{
+//			if (i % j == 0)
+//			{
+//				a = 1;
+//				break;
+//			}
+//		}
+//		if (a == 0)
+//		{
+//			if (i - c == 2)
+//			{
+//				printf("%d %d", c, i);
+//				cout << endl;
+//				c = i;
+//				b = 1;
+//			}
+//			else
+//			{
+//				c = i;
+//			}
+//		}
+//	}
+//	if (b == 0)
+//		printf("empty");
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	for (int i = 1;; i++)
+//	{
+//		for (int j = 1; j <= i; j++)
+//		{
+//			if ((i + 1) * i == 2 * n + 6*j)
+//			{
+//				cout << j << " " << i << endl;
+//				return 0;
+//			}
+//		}
+//	}
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	for (int i = 3; i <= sqrt(n); i += 2)
+//	{
+//		if (n % i == 0)
+//		{
+//			int k=
+//		}
+//	}
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	string s[200];
+//	string a, b;
+//	int sum = 0;
+//	cin >> s[sum];
+//	while (getchar() == ' ')
+//	{
+//		sum++;
+//		cin>> s[sum];
+//	}
+//	cin >> a >> b;
+//	for (int i = 0; i <= sum; i++)
+//	{
+//		if (s[i] == a)
+//		{
+//			s[i] = b;
+//			break;
+//		}
+//	}
+//	for (int i = 0; i <= sum; i++)
+//		cout << s[i] << " ";
+//	return 0;
+//}
+
+
 using namespace std;
 int main()
 {
-	string a;
-	getline(cin, a);
-	int sum = 0;
-	int length1 = 0;
-	int length2 = 0;
-	char* p;
-	for (int i = 0; i <= a.size() - 1; i++)
+	int n;
+	cin >> n;
+	for (int i = 11; i <= n; i++)
 	{
-		if (a[i] != ' ' && a[i] != ',' && a[i] != '.')
-		{
-			sum++;
-		}
-		else
-		{
-			if (sum > length1)
-			{
-				p = &a[i];
-				length1 = sum;
-			}
-			sum = 0;
-		}
-	}
-	for (int i = 0; i <= sum - 1; i++)
-	{
-		printf("%c", *(p+i));
+		for(i=)
 	}
 	return 0;
 }
