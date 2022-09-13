@@ -2434,14 +2434,519 @@ using namespace std;
 //}
 
 
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	int sum1 = 0;
+//	for (int i = 11; i <= n; i++)
+//	{   
+//		int d = 0;
+//		int sum = 0;
+//		for (int j = 2; j <= sqrt(i); j++)
+//		{
+//			if (i % j == 0)
+//			{
+//				sum = 1;
+//				break;
+//			}
+//		}
+//		if (sum == 0)
+//		{   
+//			int c = i;
+//			int f = 0;
+//			while (c)
+//			{
+//				f = c % 10 + f * 10;
+//				c /= 10;
+//			}
+//			
+//			if(f==i)
+//				sum1++;
+//		}
+//
+//	}
+//	cout << sum1;
+//	return 0;
+//}
+//
+//
+//using namespace std;
+//int main()
+//{
+//	long long n, m;
+//	cin >> n >> m;
+//	int sum1 = 0;
+//	for (int i = n; i <= m; i++)
+//	{
+//		int sum = 0;
+//		for (int j = 2; j <= sqrt(i); j++)
+//		{
+//			if (i % j == 0)
+//			{
+//				sum = 1;
+//				break;
+//			}
+//		}
+//		if (sum == 0)
+//			sum1++;
+//	}
+//	if (n == 1)
+//		cout << sum1 - 1;
+//	else
+//		cout << sum1;
+//	return 0;
+//}
+
+//using namespace std;
+//int main()
+//{
+//	int n, m;
+//	cin >> m >> n;
+//	int c = 0;
+//	for (int i = m; i <= n; i++)
+//	{
+//		c = 0;
+//		for (int j = 2; j <= i; j++)
+//		{
+//			int a = 0;
+//			if (i % j == 0)
+//			{
+//				for (int k = 2; k <= sqrt(j); k++)
+//				{
+//					if (j % k == 0)
+//					{
+//						a = 1;
+//						break;
+//					}
+//				}
+//				if (a == 0 && j > c)
+//				{
+//					c = j;
+//				}
+//			}
+//		}
+//		if (i != n)
+//			cout << c << ",";
+//		else
+//			cout << c;
+//	}
+//	return 0;
+//}
+
+
+#include <algorithm>
+//using namespace std;
+//int b[1000000];
+//int main()
+//{
+//	int p = 0;
+//	int m, n;
+//	cin >> m >> n;
+//	for (int i = m; i <= n; i++)
+//	{
+//		int a = 0;
+//		for (int j = 2; j <= sqrt(i); j++)
+//		{
+//			if (i % j == 0)
+//			{
+//				a = 1;
+//				break;
+//			}
+//		}
+//		int d = 0;
+//		if (a == 0)
+//		{
+//			int c = i;
+//			while (c)
+//			{
+//				d = d * 10 + c % 10;
+//				c /= 10;
+//			}
+//			for (int j = 2; j <= sqrt(d); j++)
+//			{
+//				if (d % j == 0)
+//				{
+//					a = 1;
+//					break;
+//				}
+//			}
+//		}
+//		if (a == 0)
+//		{
+//			if (i >= m && i <= n)
+//			{
+//				b[p] = i;
+//				if (d <= n&&d>=m)
+//				{
+//					b[++p] = d;
+//				}
+//				p++;
+//			}
+//		}
+//	}
+//	sort(&b[0], &b[p]);
+//	for (int i = 0; i <= p - 2; i++)
+//		if (b[i] != b[i + 1] && b[i] != 0)
+//			cout << b[i] << ",";
+//	if (b[p - 1] != 0)
+//		cout << b[p - 1];
+//	else
+//		cout << "No";
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int n,A=0,B=0;
+//	cin >> n;
+//	for (int i = 1; i <= n; i++)
+//	{   
+//		int a = 0;
+//		int b = 0;
+//		int count = 0;
+//		int c = i;
+//		while (c)
+//		{
+//			count = c & 1;
+//			c=c >> 1;
+//			if (count)
+//				a++;
+//			else
+//				b++;
+//		}
+//		a > b ? A++ : B++;
+//	}
+//	cout << A << " " << B;
+//	return 0;
+////}
+//
+//
+//using namespace std;
+//int main()
+//{
+//	int p, q, r;
+//	cin >> p >> q >> r;
+//	for (int i = 2; i <= 16; i++)
+//	{
+//		int p2 = p;
+//		int q2 = q;
+//		int r2 = r;
+//		int p1 = 0;
+//		int q1 = 0;
+//		int r1 = 0;
+//		int j = 0;
+//		while (p2 != 0 && (p2%10) <= i - 1)
+//		{
+//			p1 += (p2 % 10) * pow(i, j);
+//			j++;
+//			p2 /= 10;
+//		}
+//		if (p2 % 10 > i - 1)
+//			continue;
+//		j = 0;
+//		while (q2 != 0 && (q2%10) <= i - 1)
+//		{
+//			q1 += (q2 % 10) * pow(i, j);
+//			j++;
+//			q2 /= 10;
+//		}
+//		if (q2 % 10 > i - 1)
+//			continue;
+//		j = 0;
+//		while (r2 != 0 && (r2%10) <= i - 1)
+//		{
+//			r1 += (r2 % 10) * pow(i, j);
+//			j++;
+//			r2 /= 10;
+//		}
+//		if (r2 % 10 > i - 1)
+//			continue;
+//		if (p1 * q1 == r1)
+//		{
+//			cout << i;
+//			return 0;
+//		}
+//	}
+//	cout << 0;
+//	return 0;
+//}
+
+//
+//int sum(int x)
+//
+//{
+//	if (x > 1)
+//		return x + sum(x - 1);
+//	else
+//		return 1;
+//}
+//using namespace std;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	cout<<sum(n);
+//	return 0;
+//}
+
+
+//string c = "0123456789ABCDEF";
+//void change(int x,int y)
+//{
+//	if (x / y)
+//	{
+//		change(x / y, y);
+//	}
+//	cout << c[x % y];
+//}
+//using namespace std;
+//#define ll long long;
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//	change(n, m);
+//	return 0;
+//}
+
+
+//int akm(int m, int n)
+//{
+//	if (m == 0)
+//	{
+//		return n + 1;
+//	}
+//	else if (m > 0 && n == 0)
+//	{
+//		return akm(m - 1, 1);
+//	}
+//	else if (m > 0 && n > 0)
+//	{
+//		return akm(m - 1, akm(m, n - 1));
+//	}
+//}
+//
+//using namespace std;
+//int main()
+//{
+//	int m, n;
+//	cin >> m >> n;
+//	cout<<akm(m, n);
+//	return 0;
+//}
+
+
+//using namespace std;
+//int main()
+//{
+//	int n, k;
+//	cin >> n >> k;
+//	for (int i = 1; i <= k-1; i++)
+//	{
+//		n /= 10;
+//	}
+//	cout << n % 10;
+//	return 0;
+//}
+
+
+//int Hermite(int n, int x)
+//{
+//	if (n == 0)
+//	{
+//		return 1;
+//	}
+//	else if (n == 1)
+//		return 2*x;
+//	else if (n > 1)
+//	{
+//		return 2 * x * Hermite(n - 1, x) - 2 * (n - 1) * Hermite(n - 2, x);
+//	}
+//}
+//using namespace std;
+//int main()
+//{
+//	int n, x;
+//	cin >> n >> x;
+//	cout << Hermite(n, x);
+//	return 0;
+//}
+
+
+//double function(double x, double n)
+//{
+//	if (n > 1)
+//	{
+//		return sqrt(n + function(x, n - 1));
+//	}
+//	else
+//		return sqrt(1 + x);
+//}
+//using namespace std;
+//int main()
+//{
+//	double x, n;
+//	cin >> x >> n;
+//	printf("%.2lf", function(x, n));
+//	
+//	return 0;
+//}
+
+//
+//double functio(double x, int n)
+//{
+//	if (n > 1)
+//	{
+//		return x / (n + functio(x, n - 1));
+//	}
+//	else 
+//	{
+//		return x / (1 + x);
+//	}
+//}
+//using namespace std;
+//int main()
+//{
+//	double x;
+//	int n;
+//	cin >> x;
+//	cin >> n;
+//	printf("%.2lf", functio(x, n));
+//	return 0;
+//}
+
+
+//#include<cmath>
+//using namespace std;
+//int main()
+//{
+//	int x1, y1, x2, y2, x3, y3;
+//	cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+//	double a = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+//	double b = sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
+//	double c = sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
+//	double s = (a + b + c) / 2;
+//	int square = round(sqrt(s * (s - a) * (s - b) * (s - c)));
+//	cout << square;
+//	return 0;
+//}
+
+
+//using namespace std;
+//int a[1001] = { 0 };
+//int main()
+//{
+//	long long n, m;
+//	cin >> n >> m;
+//	for (int i = 1; i <= m; i++)
+//	{
+//		int k;
+//		cin >> k;
+//		if (k != n&&k!=1)
+//		{
+//			if (a[k + 1] == 0)
+//				a[k + 1] = 1;
+//			else
+//				a[k + 1] = 0;
+//			if (a[k] == 0)
+//				a[k] = 1;
+//			else
+//				a[k] = 0;
+//			if (a[k - 1] == 0)
+//				a[k - 1] = 1;
+//			else
+//				a[k - 1] = 0;
+//		}
+//		if (k == n)
+//		{
+//			if (a[k - 1] == 0)
+//				a[k - 1] = 1;
+//			else
+//				a[k - 1] = 0;
+//			if (a[k] == 0)
+//				a[k] = 1;
+//			else
+//				a[k] = 0;
+//			if (a[1] == 0)
+//				a[1] = 1;
+//			else
+//				a[1] = 0;
+//		}
+//		if (k == 1)
+//		{
+//			if (a[n] == 0)
+//				a[n] = 1;
+//			else
+//				a[n] = 0;
+//			if (a[k] == 0)
+//				a[k] = 1;
+//			else
+//				a[k] = 0;
+//			if (a[2] == 0)
+//				a[2] = 1;
+//			else
+//				a[2] = 0;
+//		}
+//	}
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cout << a[i] << " ";
+//	}
+//}
+
+
+
+//using namespace std;
+//int main()
+//{
+//	int x;
+//	cin >> x;
+//	printf("I am %d years old.", x);
+//	return 0;
+//}
+
+
+
+//using namespace std;
+//int main()
+//{
+//	string a;
+//	cin >> a;
+//	string b = "luogu";
+//	int count = 0;
+//	for (int i = 0; i <= a.length() - 1; i++)
+//	{
+//		if (a[i] == 'l')
+//		{
+//			char * p = &a[i];
+//			for (int j = 0; j <= 4; j++)
+//			{
+//				if (*p == b[j])
+//				{
+//					p++;
+//				}
+//				else 
+//					break;
+//				if (j == 4)
+//				{
+//					count++;
+//				}
+//
+//			}
+//		}
+//	}
+//	cout << count;
+//	return 0;
+//}
+
+
 using namespace std;
 int main()
 {
-	int n;
-	cin >> n;
-	for (int i = 11; i <= n; i++)
-	{
-		for(i=)
-	}
+	long long n,m
 	return 0;
 }
