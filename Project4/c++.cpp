@@ -2944,9 +2944,50 @@ using namespace std;
 //}
 
 
+int a[10002][10002];
 using namespace std;
 int main()
 {
-	long long n,m
+	long n, m;
+	cin >> n >> m;
+	int count = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j <= m; j++)
+		{
+			cin >> a[i][j];
+		}
+	}
+	int T;
+	cin >> T;
+	for (int i = 0; i <= T - 1; i++)
+	{
+		int x1, y1, x2, y2;
+		cin >> x1 >> y1 >> x2 >> y2;
+		int tmp = a[x1][y1];
+		a[x1][y1] = a[x2][y2];
+		a[x2][y2] = tmp;
+	}
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j <= m; j++)
+		{
+			if (a[i][j] > a[i - 1][j] && a[i][j] > a[i + 1][j] && a[i][j] > a[i][j - 1] && a[i][j] > a[i][j + 1])
+			{
+				count++;
+			}
+		}
+	}
+	cout << count << endl;
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j <= m; j++)
+		{
+			if (a[i][j] > a[i - 1][j] && a[i][j] > a[i + 1][j] && a[i][j] > a[i][j - 1] && a[i][j] > a[i][j + 1])
+			{
+				cout << i << " " << j << endl;
+			}
+		}
+	}
 	return 0;
 }
